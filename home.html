@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <style>
+    /* general styles start */
+    * {
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsla(219, 15%, 55%, 0.19);
+      --dark-blue: hsla(217, 45%, 22%, 0.1);
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    body {
+      background: var(--light-gray);
+    }
+    /* general styles end */
+    
+    /* QR styles start*/
+    #container {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      top: 220px;
+    }
+    #qr-container {
+      min-height: 500px;
+      max-width: 300px;
+      background: var(--white);
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0.5px 1px var(--dark-blue), 0px 0px 20px var(--grayish-blue)
+    }
+    #qr-container img {
+      width: 100%; 
+      border-radius: 10px;
+    }
+    #qr-container h2, p {
+      margin: 15px auto 0 auto;
+      padding: 0 10px 0 10px;
+      text-align: center;
+      font-size: 17.5px;
+    }
+    #qr-container h2 {
+      font-size: 22px !important;
+      text-align: center;
+    }
+    /* QR styles end */
+
+    /* footer styles start*/
+    #footer {
+      display:block;
+      position: absolute;
+      max-width: 474px;
+      max-height: 0px;
+      text-align: center;
+    }
+    #footer p {
+      text-align: center;
+      margin-top: 109%;
+      margin-bottom: 0;
+    }
+    #footer a {
+      text-decoration: none;
+      color: #3744d5;
+     }
+     #footer a:hover {
+      text-decoration: underline;
+     }
+     /* footer styles end */
+  </style>
+  <title>Frontend Mentor | QR code component</title>
+</head>
+<body>
+  <div id="container">
+    <div id="qr-container">
+      <img src="images/image-qr-code.png" alt="QR code front-end mentor">
+      <h2 class="description">Improve your front-end skills by building projects</h2>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+  <footer id="footer">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Aneural/" target="_blank">Aneural</a>.</p>
+  </footer>
+</body>
+</html>
