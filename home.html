@@ -29,7 +29,7 @@
       display: flex;
       position: relative;
       justify-content: center;
-      top: 220px;
+      top: 200px;
     }
     #qr-container {
       min-height: 500px;
@@ -44,18 +44,25 @@
       border-radius: 10px;
     }
     #qr-container h2, p {
-      margin: 15px auto 0 auto;
+      margin: 25px auto 0 auto;
       padding: 0 10px 0 10px;
       text-align: center;
-      font-size: 17.5px;
+      font-size: 15px;
     }
     #qr-container h2 {
-      font-size: 22px !important;
+      font-size: 21px !important;
       text-align: center;
     }
-    @media (max-width: 1399px)
+    @media (max-width: 375px)
     {
-
+      #container {
+        top: 30px;
+        min-height: 300px;
+        height: 100%;
+      }
+      #qr-container {
+        padding: 5px;
+      }
     }
     /* QR styles end */
 
@@ -71,6 +78,7 @@
       text-align: center;
       margin-top: 109%;
       margin-bottom: 3px;
+      font-size: 15px;
     }
     #footer a {
       text-decoration: none;
@@ -78,6 +86,12 @@
      }
      #footer a:hover {
       text-decoration: underline;
+     }
+     @media (max-width: 375px){
+      #footer-container{
+        position: absolute;
+        margin-bottom: 0px;
+      }
      }
      /* footer styles end */
   </style>
@@ -91,9 +105,11 @@
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
   </div>
-  <footer id="footer">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Aneural/" target="_blank">Aneural</a>.</p>
-  </footer>
+  <div id="footer-container">
+    <footer id="footer">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Aneural/" target="_blank">Aneural</a>.</p>
+    </footer>
+</div>
 </body>
 </html>
